@@ -1,0 +1,10 @@
+[package]
+name = "x264-sys"
+version = "0.0.1"
+authors = ["Jarod Liu <liuyuanzhi@gmail.com>"]
+build = "build.rs"
+
+
+[lib]
+name = "x264-sys"
+path = "lib.rs"
