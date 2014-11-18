@@ -1,3 +1,3 @@
-#[test]
-fn it_works() {
-}
+#![allow(non_camel_case_types)]
+
+extern crate libc;

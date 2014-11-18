@@ -10,10 +10,11 @@ fn main() {
     let mut configure = Command::new("bash");
     configure.arg(src.join("x264/configure"));
     if target.contains("android") {
+      let ndk = Path::new(os::getenv("ANDROID_NDK").unwrap());
     	configure
-    	.arg(format!("--cross-prefix={}-", target))
-    	.arg(format!("--sysroot={}", os::getenv("NDK_SYSROOT").unwrap()))
-    	.arg("--host=arm-linux");
+      	.arg(format!("--cross-prefix={}-", target))
+      	.arg(format!("--sysroot={}", ndk.join("sysroot").display()))
+      	.arg("--host=arm-linux");
     }
 	run(configure
 		.cwd(&dst)

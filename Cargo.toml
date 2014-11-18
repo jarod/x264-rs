@@ -3,6 +3,9 @@ name = "x264-rs"
 version = "0.0.1"
 authors = ["Jarod Liu <liuyuanzhi@gmail.com>"]
 
+[target.arm-linux-androideabi.lib]
+crate-type = ["staticlib"]
+
 [dependencies.x264-sys]
 path = "x264-sys"
 version = "*"
