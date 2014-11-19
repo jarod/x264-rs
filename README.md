@@ -12,8 +12,8 @@ cargo build
 
 ### try build for android
 ```bash
-# follow https://github.com/rust-lang/rust/wiki/Doc-building-for-android to setup standalone ndk toolchain
+# follow https://github.com/rust-lang/rust/wiki/Doc-building-for-android to setup rust for android and standalone ndk toolchain
 export ANDROID_PATH=<standalone ndk toolchain path>
-export PATH=$ANDROID_NDK:$PATH
+export PATH=$ANDROID_NDK/bin:$PATH
 cargo build --target=arm-linux-androideabi
 ```
