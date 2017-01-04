@@ -1,9 +1,12 @@
 [package]
-name = "x264-sys"
-version = "0.0.0"
+name = "x264_sys"
+version = "0.0.1"
 authors = ["Jarod Liu <liuyuanzhi@gmail.com>"]
 links = "x264"
 build = "build.rs"
 
 [lib]
-name = "x264-sys"
+name = "x264_sys"
+
+[build-dependencies]
+bindgen = "0.19"

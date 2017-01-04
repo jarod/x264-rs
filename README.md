@@ -1,7 +1,7 @@
 ### use x264-rs
 ```toml
-[dependencies.x264-rs]
-git = "https://github.com/jarod/x264-rs.git"
+[dependencies]
+x264 = { git="https://github.com/jarod/x264-rs.git" }
 ```
 
 ### try build for linux
